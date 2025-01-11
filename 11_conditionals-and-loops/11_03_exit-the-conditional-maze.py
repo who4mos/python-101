@@ -32,16 +32,17 @@
 
 flag = True
 
-if flag == True:
+if flag == True:                # left
     print("left")
+    flag = False
 
-if flag == False:
+if flag == False:               # up
     print("straight ahead")
 
 if flag == True:
     print("left")
 
-if flag == False:
+if flag == False:               # up
     print("straight ahead")
 
 if flag == True:
@@ -56,10 +57,11 @@ if flag == True:
 if flag == True:
     print("left")
 
-if flag == False:
+if flag == False:               # right
     print("right")
-
-if flag == True:
+    flag = True
+    
+if flag == True:                # up
     print("straight ahead")
 
 if flag == False:
@@ -68,11 +70,12 @@ if flag == False:
 if flag == False:
     print("DEAD END")
 
-if flag == True:
+if flag == True:                # right
     print("right")
 
-if flag == True:
+if flag == True:                # up
     print("straight ahead")
+    flag = False
 
 if flag == True:
     print("left")

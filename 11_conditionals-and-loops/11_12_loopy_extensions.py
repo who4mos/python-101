@@ -8,3 +8,16 @@
 # for example flags and conditional statements.
 
 filename = "operators.pdf"
+
+in_extension = False
+extension = ''
+for char in filename:
+    if in_extension:
+        extension += char
+        
+    if char == '.':
+        in_extension = True
+
+
+print(extension)
+print(extension == "pdf")
